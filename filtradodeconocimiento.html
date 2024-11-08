@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Cuestionario JavaScript</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Cuestionario JavaScript para Principiantes</h1>
+        <div id="question-container">
+            <p id="question">Pregunta aparecerá aquí</p>
+            <div id="answers">
+                <!-- Respuestas se generarán dinámicamente aquí -->
+            </div>
+        </div>
+        <div id="timer">Tiempo restante: <span id="time-left">20</span> segundos</div>
+        <button id="next-button" onclick="nextQuestion()" style="display:none;">Siguiente Pregunta</button>
+        <div id="score-board" style="display:none;">
+            <h2>Puntuación Final: <span id="final-score">0</span></h2>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
